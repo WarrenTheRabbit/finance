@@ -8,3 +8,6 @@ class TransactionsService:
 
     def create_transaction(self) -> Transaction:
         return self.transactions_repository.add()
+
+    def list_transactions(self):
+        return self.transactions_repository.list()
